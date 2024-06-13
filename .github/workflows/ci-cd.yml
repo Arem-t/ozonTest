@@ -12,11 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Install dependencies
-        run: go mod download
-
-
       - name: Run tests
         run: go test -v internal/graph/resolver_test.go
 
