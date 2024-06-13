@@ -23,6 +23,7 @@ func main() {
 
 	var repo graph.Repository
 	// Выбор хранилища на основе переменной окружения
+	// Переменную окружения можно менять перед развертыванием докер контейнера
 	storageType := os.Getenv("STORAGE_TYPE")
 	switch storageType {
 	case "postgres":
